@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_wan_android_demo/page/home_page.dart';
-import 'package:flutter_wan_android_demo/page/knowledge_page.dart';
-import 'package:flutter_wan_android_demo/page/public_page.dart';
-import 'package:flutter_wan_android_demo/page/navigation_page.dart';
-import 'package:flutter_wan_android_demo/page/project_page.dart';
-
+import 'package:flutter_wan_android_demo/page/home/home_page.dart';
+import 'package:flutter_wan_android_demo/page/knowledge/knowledge_page.dart';
+import 'package:flutter_wan_android_demo/page/public/public_page.dart';
+import 'package:flutter_wan_android_demo/page/navigation/navigation_page.dart';
+import 'package:flutter_wan_android_demo/page/project/project_page.dart';
+import 'package:flutter_wan_android_demo/page/drawer/drawer_page.dart';
 
 
 class BottomBarItemAPP extends StatefulWidget{
@@ -37,7 +37,7 @@ class BottomBarItemAPPState extends State<BottomBarItemAPP>{
         type: BottomNavigationBarType.fixed,// item的模式：有两种模式：可自行修改调试
       ),
       // 侧滑栏
-      drawer: Text('这是一个侧边栏'),
+      drawer: DrawerPage(),
     );
   }
 }
