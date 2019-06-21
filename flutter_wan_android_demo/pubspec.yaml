@@ -19,10 +19,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  # https://pub.flutter-io.cn/packages/intro_slider#-readme-tab-
+  # app内容介绍的引导图，一般首次安装或者更新时才会出现
+  intro_slider: ^2.2.2
+  # https://pub.flutter-io.cn/packages/shared_preferences
+  # flutter出品，本地缓存，类似iOS的NSUserdefault
+  shared_preferences: ^0.5.3+1
+  # https://pub.flutter-io.cn/packages/package_info
+  # flutter出品，获取app信息：app名，包名，build，version
+  package_info: ^0.4.0+4
 
 dev_dependencies:
   flutter_test:

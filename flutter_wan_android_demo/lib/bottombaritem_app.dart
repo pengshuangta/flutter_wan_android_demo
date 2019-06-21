@@ -45,7 +45,7 @@ class BottomBarItemAPPState extends State<BottomBarItemAPP>{
 /*
 ** 页面标题
 */
-_pageTitleWidget(int index){
+String _pageTitleWidget(int index){
   List<String> titles = <String>[
     '首页',
     '体系',
