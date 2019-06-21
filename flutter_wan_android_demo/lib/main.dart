@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_wan_android_demo/bottombaritem_app.dart';
+import 'package:flutter_wan_android_demo/page/launch/launch_page.dart';
 
 void main(){
   return runApp(MyApp());
@@ -25,7 +26,8 @@ class MyAppState extends State<MyApp>{
       //     return BottomBarItemAPP();
       //   }
       // },
-      home: BottomBarItemAPP(),
+      // home: BottomBarItemAPP(),
+      home: LanuchPage(),
     );
   }
 }
