@@ -29,12 +29,12 @@ class LanuchPageState extends State<LanuchPage> {
     // 获取当前app的版本号
     PackageInfo info = await PackageInfo.fromPlatform();
     String infoVersion = info.version;
-    // 一定要改
-    if (preVersion == infoVersion || preVersion == null) {
+    if (preVersion != infoVersion || preVersion == null) {
       // 经过引导页
-      Navigator.of(context).pushAndRemoveUntil(
-      new MaterialPageRoute(builder: (context) => AppIntroNavPage()),
-      (route) => route == null);
+      Navigator.pushAndRemoveUntil(context, new  MaterialPageRoute(builder: (BuildContext context) => AppIntroNavPage()), (route)=> route == null);
+      // Navigator.of(context).pushAndRemoveUntil(
+      // new MaterialPageRoute(builder: (context) => AppIntroNavPage()),
+      // (route) => route == null);
     } else {
       // 进入主页
       Navigator.of(context).pushAndRemoveUntil(

@@ -23,6 +23,7 @@ class BottomBarItemAPPState extends State<BottomBarItemAPP>{
         title: Text(_pageTitleWidget(_currentIndex)),// 导航栏标题
         // 导航栏右边按钮
         actions: _actions(_currentIndex),
+        centerTitle: true,
       ),
       body: currentPageWidget(_currentIndex),// 显示的页面内容
       bottomNavigationBar: BottomNavigationBar(

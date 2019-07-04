@@ -29,10 +29,26 @@ dependencies:
   # https://pub.flutter-io.cn/packages/package_info
   # flutter出品，获取app信息：app名，包名，build，version
   package_info: ^0.4.0+4
+  # https://pub.flutter-io.cn/packages/dio
+  # http网络请求框架
+  dio: ^2.1.7
+  # https://pub.flutter-io.cn/packages/json_annotation
+  # json序列化和反序列化和 json_serializable、build_runner 一起使用
+  json_annotation: ^2.4.0
+  # https://pub.flutter-io.cn/packages/flutter_swiper
+  # https://github.com/best-flutter/flutter_swiper/blob/master/README-ZH.md
+  # 无限轮播图
+  flutter_swiper: ^1.1.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  # 终端命令输出dart文件的工具 常用命令:监听自动生成文件 flutter packages pub run build_runner watch
+  build_runner: ^1.6.0
+  # https://pub.flutter-io.cn/packages/json_serializable
+  # json和model转换时生成.g.dart文件
+  json_serializable: ^3.0.0
+
 
 
 # For information on the generic Dart part of this file, see the
