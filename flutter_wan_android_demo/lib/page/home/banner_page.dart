@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutter_wan_android_demo/model/home_banner_model.dart';
 import 'package:flutter_wan_android_demo/http/url_service.dart';
-
+import 'package:flutter_wan_android_demo/page/webview/webview_page.dart';
 class BannerPage extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
@@ -39,6 +39,9 @@ class BannerPageState extends State<BannerPage>{
       // 跳转到详情页面
       onTap: (){
         print('点击banner');
+        Navigator.of(context).push(MaterialPageRoute(builder: (context){
+          return WebViewPage(title: _bannerList[index].title,url: _bannerList[index].url,);
+        }));
       },
       child: Container(
         // child: Image.network(_bannerList[index].imagePath,fit: BoxFit.fill,),

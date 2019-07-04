@@ -39,6 +39,9 @@ dependencies:
   # https://github.com/best-flutter/flutter_swiper/blob/master/README-ZH.md
   # 无限轮播图
   flutter_swiper: ^1.1.6
+  # https://pub.flutter-io.cn/packages/webview_flutter#-installing-tab-
+  # flutter出品 webview
+  webview_flutter: ^0.3.9+1
 
 dev_dependencies:
   flutter_test:
